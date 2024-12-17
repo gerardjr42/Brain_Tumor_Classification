@@ -117,7 +117,7 @@ def generate_saliency_map(model, img_array, class_index, img_size):
 
 
 #Load Xception Model Selected
-def load_xception_model(model_path):
+def load_xception_model(model_path="xception_model.weights.h5"):
   img_shape=(299,299,3)
   base_model = tf.keras.applications.Xception(
       weights='imagenet',
