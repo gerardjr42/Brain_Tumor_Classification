@@ -6,7 +6,7 @@ numpy
 matplotlib
 seaborn
 plotly
-opencv-python
+opencv-python-headless
 Pillow
 pyngrok
 python-dotenv
