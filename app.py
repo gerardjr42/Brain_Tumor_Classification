@@ -117,7 +117,7 @@ def generate_saliency_map(model, img_array, class_index, img_size):
 
 
 #Load Xception Model Selected
-def load_xception_model(model_path="xception_model.weights.h5"):
+def load_xception_model(model_path='xception_model.weights.h5'):
   img_shape=(299,299,3)
   base_model = tf.keras.applications.Xception(
       weights='imagenet',
@@ -156,10 +156,10 @@ if uploaded_file is not None:
   )
   #Load user choice of model selected
   if selected_model == "Transer Learning - Xception":
-    model = load_xception_model('/content/xception_model.weights.h5')
+    model = load_xception_model('xception_model.weights.h5')
     img_size = (299, 299)
   else:
-    model = load_model('/content/cnn_model.h5')
+    model = load_model('cnn_model.h5')
     img_size = (224, 224)
 
   labels = ['Glioma', 'Meningioma', 'No tumor', 'Pituitary']
